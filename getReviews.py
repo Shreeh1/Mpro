@@ -3,7 +3,6 @@ import requests
 import re
 import json
 import csv
-import mechanize
 from readTx import readTx
 
 def get_reviews(website):

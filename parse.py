@@ -1,18 +1,14 @@
 from bs4 import BeautifulSoup
 import requests
 
-
-
 def get_speciality(website):
 
     try:
         # list of specialties
-        speciality_arr = ['/family-practice-directory', '/allergy-immunology-directory', '/critical-care-medicine-directory',
-                          '/dermatology-directory', '/otolaryngology-directory', '/emergency-medicine-directory',
-                          '/diabetes-metabolism-endocrinology-directory', '/surgery-general-directory',
+        speciality_arr = ['/diabetes-metabolism-endocrinology-directory', '/surgery-general-directory',
                           '/pain-medicine-directory', '/pediatric-critical-care-medicine-directory',
                           '/pediatric-emergency-medicine-directory', '/pediatric-infectious-disease-medicine-directory',
-                          '/public-health-directory']
+                          '/public-health-directory', '/family-practice-directory']
         # cat = requests.get(website + '/specialty-directory')
         # ca = cat.content
         # soup = BeautifulSoup(ca, 'html.parser')
