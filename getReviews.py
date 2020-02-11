@@ -3,12 +3,14 @@ import requests
 import re
 import json
 import csv
-from readTx import readTx
+from read_from_text import read_from_text
+
 
 def get_reviews(website):
 
     # reading from the text files
-    content = readTx()
+    # content = readTx()
+    content = read_from_text()
     cardio_dict = {}
     for phy in content:
         try:
@@ -40,7 +42,7 @@ def get_reviews(website):
         except:
             pass
 
-    with open('cardio.csv', 'w') as f:
+    with open('critical-care-medicine-directory.csv', 'w') as f:
         w = csv.DictWriter(f, cardio_dict.keys())
         w.writeheader()
         w.writerow(cardio_dict)

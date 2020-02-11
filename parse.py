@@ -5,10 +5,7 @@ def get_speciality(website):
 
     try:
         # list of specialties
-        speciality_arr = ['/diabetes-metabolism-endocrinology-directory', '/surgery-general-directory',
-                          '/pain-medicine-directory', '/pediatric-critical-care-medicine-directory',
-                          '/pediatric-emergency-medicine-directory', '/pediatric-infectious-disease-medicine-directory',
-                          '/public-health-directory', '/family-practice-directory']
+        speciality_arr = ['/spa-medicine-directory']
         # cat = requests.get(website + '/specialty-directory')
         # ca = cat.content
         # soup = BeautifulSoup(ca, 'html.parser')
