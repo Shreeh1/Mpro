@@ -42,7 +42,7 @@ def get_reviews(website):
         except:
             pass
 
-    with open('critical-care-medicine-directory.csv', 'w') as f:
+    with open('otolaryngology-directory.csv', 'w') as f:
         w = csv.DictWriter(f, cardio_dict.keys())
         w.writeheader()
         w.writerow(cardio_dict)
